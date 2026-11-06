@@ -1,7 +1,8 @@
 # Write courses/<spec>_deletion_plan.md: every lesson a replacement superseded, for the owner to approve deleting.
 #   python -I deletion_plan.py <spec>
 import json, os, sys
-HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from lessonlib import HERE
 spec = sys.argv[1]
 ids = json.load(open(os.path.join(HERE, "courses", f"{spec}_ids.json"), encoding="utf-8"))
 reps = json.load(open(os.path.join(HERE, "courses", f"{spec}_replacements.json"), encoding="utf-8"))

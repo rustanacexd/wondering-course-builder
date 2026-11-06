@@ -3,7 +3,7 @@
 # Optional per-lesson keys: url (overrides URL), course_section (section title in a new course),
 # description (a ready-made brief; then points are not used).
 import importlib, os, re, sys
-HERE = os.path.dirname(os.path.abspath(__file__))
+HERE = os.path.abspath(os.environ.get("WONDERING_WORKSPACE", os.getcwd()))  # folder with plans/, courses/, sources/
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
@@ -11,7 +11,8 @@ def load_plan(name):
     return importlib.import_module(f"plans.{name}")
 
 def brief(url, L):
-    from guards import GUARDS
+    try: from guards import GUARDS  # optional guards.py in the workspace
+    except ImportError: GUARDS = {}
     g = [GUARDS[L["name"]]] if L["name"] in GUARDS else []
     if L.get("description"):
         return "\n- ".join([L["description"]] + g)

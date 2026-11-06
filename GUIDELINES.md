@@ -43,7 +43,7 @@ The generator writes exactly what the brief asks for and copies its framing. So 
 
 ## Checking the result
 
-- **Read every lesson in full,** with a reviewer who did not write the brief, against `courses/REVIEW_GUIDE.md`.
+- **Read every lesson in full,** with a reviewer who did not write the brief, against `REVIEW_GUIDE.md`.
 - **Judge it as a learner.** Could someone who has only this course follow every page and answer every question? Does it teach, or just state?
 - **Fix by replacing.** Lessons can't be edited. Fix the brief, generate a replacement, review the replacement too, then delete the old copy.
 - **Say what you checked.** "Correct" is not "teaches". Call a lesson fixed only after its replacement passes review.

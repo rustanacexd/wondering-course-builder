@@ -3,8 +3,9 @@
 import glob, json, os, subprocess, sys, time
 from urllib.error import HTTPError
 from concurrent.futures import ThreadPoolExecutor
-HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, HERE)
+SCRIPTS = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, SCRIPTS)
+from lessonlib import HERE
 from lessonlib import lesson_text
 from wondering import call
 
@@ -29,7 +30,7 @@ for i in range(60):
     time.sleep(10)
 else:
     print("NOT READY:", [n for (n, _), s in zip(wanted, st) if not s])
-subprocess.run([sys.executable, "-I", os.path.join(HERE, "course_build.py"), "dump", spec], check=True)
+subprocess.run([sys.executable, "-I", os.path.join(SCRIPTS, "course_build.py"), "dump", spec], check=True)
 os.makedirs(os.path.join(HERE, "courses", f"{spec}_lessons_txt"), exist_ok=True)
 for f in sorted(glob.glob(os.path.join(HERE, "courses", f"{spec}_lessons", "*.md"))):
     d = json.load(open(f, encoding="utf-8"))
