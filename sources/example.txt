@@ -1,0 +1,7 @@
+Python lists
+
+A list holds items in order: nums = [3, 1, 2]. Indexing starts at 0, so nums[0] is 3.
+Negative indexes count from the end: nums[-1] is 2.
+A slice copies a range: nums[0:2] is [3, 1]. The end index is not included.
+Lists are mutable: nums.append(5) adds 5 at the end and returns None.
+sorted(nums) returns a new sorted list; nums.sort() sorts in place and returns None.
