@@ -1,0 +1,19 @@
+1. SQL joins. Tables customers(id, name) and orders(id, customer_id, total). INNER JOIN returns only customers that have at least one order. LEFT JOIN keeps every customer; when a customer has no orders, the order columns are NULL. A filter on the right table in WHERE (WHERE orders.total > 10) drops those NULL rows and turns the LEFT JOIN into an inner join; put the condition in the ON clause to keep them. COUNT(orders.id) gives 0 for a customer with no orders, while COUNT(*) gives 1.
+
+2. Git rebase and merge. git merge main on a feature branch adds a merge commit and keeps both histories as they were. git rebase main replays the feature commits on top of main, so they get new hashes and the history becomes a straight line. Never rebase commits that others have already pulled: their copies no longer match. During a rebase each commit can conflict; fix the files, git add them, then git rebase --continue.
+
+3. Compound interest. A = P(1 + r/n)^(nt). $1,000 at 5% a year, compounded yearly for 2 years, grows to $1,102.50; simple interest would give $1,100. Compounded monthly it grows to $1,104.94. The rule of 72 estimates doubling time: at 6% a year, money doubles in about 72 / 6 = 12 years.
+
+4. Mean and median. For the values 2, 3, 3, 4, 100 the mean is 22.4 but the median is 3. One extreme value pulls the mean and barely moves the median, so the median describes typical income or house prices better. With an even count, the median is the average of the two middle values: for 1, 2, 3, 4 it is 2.5.
+
+5. HTTP caching. Cache-Control: max-age=3600 lets a cache reuse a response for one hour without asking the server. no-cache does not mean "do not cache": the cache may store the response but must check with the server before each reuse. no-store means never store it. With an ETag, the client sends If-None-Match; if nothing changed, the server answers 304 Not Modified with no body.
+
+6. Python default arguments. Default values are evaluated once, when def runs. def add(item, items=[]) shares one list across calls: add(1) returns [1], then add(2) returns [1, 2]. The fix is items=None and, inside the function, if items is None: items = []. Immutable defaults such as 0 or None are safe.
+
+7. Photosynthesis. Overall: 6CO2 + 6H2O + light energy -> C6H12O6 + 6O2. The light-dependent reactions in the thylakoid membranes split water, release O2, and make ATP and NADPH. The Calvin cycle in the stroma uses that ATP and NADPH to fix CO2 into sugar. The oxygen released comes from water, not from carbon dioxide.
+
+8. Bayes' theorem. A disease affects 1% of people. A test detects 90% of sick people and wrongly flags 9% of healthy people. Out of 1,000 people, 10 are sick and 9 of them test positive; of 990 healthy people about 89 test positive. So P(sick | positive) is about 9 / 98, roughly 9%, not 90%. P(positive | sick) and P(sick | positive) are different numbers.
+
+9. French passé composé with être. A fixed list of about 17 verbs, mostly about coming, going or changing state (aller, venir, partir, arriver, naître, mourir), and all reflexive verbs, use être as the auxiliary. Not every movement verb is on the list: marcher and courir take avoir (j'ai marché). The past participle then agrees with the subject: elle est allée, ils sont partis. With avoir there is no agreement with the subject: elle a mangé. "J'ai allé" is wrong; the correct form is je suis allé (allée for a woman).
+
+10. TCP three-way handshake. The client sends SYN with its initial sequence number x. The server answers SYN-ACK with its own sequence number y and acknowledgment number x + 1. The client sends ACK with acknowledgment number y + 1. Only then does data flow. UDP has no handshake: it just sends datagrams.

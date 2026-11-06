@@ -1,0 +1,22 @@
+[
+ {"id": "p01", "expect": true,  "prompt": "Make a Wondering course from this article: https://example.com/intro-to-sql-joins"},
+ {"id": "p02", "expect": true,  "prompt": "Turn my notes on Bayesian statistics (notes.md) into Wondering lessons"},
+ {"id": "p03", "expect": true,  "prompt": "This Wondering lesson keeps saying 'according to the book' instead of explaining. Fix it."},
+ {"id": "p04", "expect": true,  "prompt": "Generate the lessons I just added to my Wondering course, they're still empty"},
+ {"id": "p05", "expect": true,  "prompt": "Review the lessons in my Wondering course and tell me which quizzes have wrong answers"},
+ {"id": "p06", "expect": true,  "prompt": "Delete the old duplicate lesson copies in my Wondering course"},
+ {"id": "p07", "expect": true,  "prompt": "Create Wondering lessons from the Python docs page on dictionaries"},
+ {"id": "p08", "expect": true,  "prompt": "Build me a Wondering course on Rust ownership from chapter 4 of the Rust book"},
+ {"id": "p09", "expect": true,  "prompt": "Lesson 12 in my Wondering course has a quiz with two correct answers. Replace it."},
+ {"id": "p10", "expect": true,  "prompt": "Add three lessons on HTTP caching to my existing Wondering course, based on the MDN article"},
+ {"id": "n01", "expect": false, "prompt": "Summarize this article about SQL joins for me: https://example.com/intro-to-sql-joins"},
+ {"id": "n02", "expect": false, "prompt": "Make a Notion page outlining a course on Bayesian statistics"},
+ {"id": "n03", "expect": false, "prompt": "Write a lesson plan for my 8th grade science class on photosynthesis"},
+ {"id": "n04", "expect": false, "prompt": "Create Anki flashcards from these notes on French verbs"},
+ {"id": "n05", "expect": false, "prompt": "Explain Rust ownership to me like I'm new to it"},
+ {"id": "n06", "expect": false, "prompt": "Build a Udemy course outline from this blog post"},
+ {"id": "n07", "expect": false, "prompt": "Review this pull request for bugs"},
+ {"id": "n08", "expect": false, "prompt": "I'm wondering how HTTP caching works. Can you explain?"},
+ {"id": "n09", "expect": false, "prompt": "Write five quiz questions about the TCP handshake, each with exactly one correct answer"},
+ {"id": "n10", "expect": false, "prompt": "What can the Wondering app do, in general?"}
+]

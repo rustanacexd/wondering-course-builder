@@ -37,6 +37,8 @@ def path(spec_name, suffix):
 
 spec_name = sys.argv[2]
 spec = importlib.import_module(f"courses.{spec_name}")
+if hasattr(spec, "TEACH"):  # a spec may override the brief preamble (used by the A/B eval)
+    import lessonlib; lessonlib.TEACH = spec.TEACH
 cmd = sys.argv[1]
 
 if cmd == "selftest":

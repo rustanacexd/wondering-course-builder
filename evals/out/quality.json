@@ -1,0 +1,1002 @@
+[
+ {
+  "kind": "abs",
+  "arm": "old",
+  "n": 1,
+  "rep": 0,
+  "out": {
+   "problem": 3,
+   "example_first": 5,
+   "plain_terms": 3,
+   "limits": 5,
+   "explains_examples": 4,
+   "thinking_quiz": 4,
+   "misconception_distractors": 4,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "A clear example-led lesson with strong traps around WHERE versus ON and COUNT; it drops points because it never says up front why joins matter, uses 'predicate' and 'executor' without explaining them, and the quizzes leave some wrong choices unexplained (COUNT(c.id), WHERE o.id IS NOT NULL, total 0)."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "new",
+  "n": 1,
+  "rep": 0,
+  "out": {
+   "problem": 5,
+   "example_first": 5,
+   "plain_terms": 4,
+   "limits": 5,
+   "explains_examples": 5,
+   "thinking_quiz": 5,
+   "misconception_distractors": 4,
+   "overall": 5,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "A strong lesson that uses one dataset to show how WHERE can undo a LEFT JOIN and how COUNT(*) gives a wrong count, with correct traces and keys; small gaps are that GROUP BY and 'aggregate' are never explained, the 'Check yourself' page shows its answers in the table instead of asking for a prediction, and some quiz explanations don't say why each wrong choice is wrong."
+  }
+ },
+ {
+  "kind": "pair",
+  "arm": "new=Y",
+  "n": 1,
+  "rep": 0,
+  "out": {
+   "better": "Y",
+   "why": "Y shows the full sample data and the LEFT JOIN output up front, and it follows each row through every step, including Ben's 8 order, which fails both filters. Its integrated check-yourself task and quizzes combine all three mistakes, while X teaches with a thinner dataset and never shows its starting data as a table."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "old",
+  "n": 2,
+  "rep": 0,
+  "out": {
+   "problem": 5,
+   "example_first": 4,
+   "plain_terms": 3,
+   "limits": 4,
+   "explains_examples": 4,
+   "thinking_quiz": 4,
+   "misconception_distractors": 3,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "A clear lesson built on scenarios, but 'hash', 'parent' and 'stage' are used before any plain explanation (hash only appears in the glossary), most quiz explanations justify only the right answer without saying why each wrong choice fails, and the cloze item tests recall of the steps rather than thinking."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "new",
+  "n": 2,
+  "rep": 0,
+  "out": {
+   "problem": 5,
+   "example_first": 5,
+   "plain_terms": 4,
+   "limits": 5,
+   "explains_examples": 5,
+   "thinking_quiz": 5,
+   "misconception_distractors": 4,
+   "overall": 5,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "A clear lesson that starts from an example and gives the golden rule as the limit and 'rebase moves commits' as the common mistake. A few terms are never explained in plain words ('parent', 'tip', 'push/pull'), and the distractors in the cloze and fill-in-the-blank practices are not explained one by one."
+  }
+ },
+ {
+  "kind": "pair",
+  "arm": "new=Y",
+  "n": 2,
+  "rep": 0,
+  "out": {
+   "better": "Y",
+   "why": "Y uses concrete named commits (A, B, M, A', B'), defines commits and conflicts for a true newcomer, states limits and misconceptions (rebase copies rather than moves, same files with different history, merge clutter), and adds a quiz on what stays the same; X covers the same points more abstractly."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "old",
+  "n": 3,
+  "rep": 0,
+  "out": {
+   "problem": 2,
+   "example_first": 2,
+   "plain_terms": 5,
+   "limits": 2,
+   "explains_examples": 4,
+   "thinking_quiz": 4,
+   "misconception_distractors": 3,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "The numbers are correct and the terms are defined clearly. But the lesson starts with definitions rather than why compounding matters, and gives the formula before the worked example. Its only limit is saying the rule of 72 is an estimate; it never shows it getting less accurate at high rates. The monthly section repeats its own text as a broken table, and some wrong answers, such as 'All three end with the same amount' and '$2,200', are things few learners would believe and are not explained."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "new",
+  "n": 3,
+  "rep": 0,
+  "out": {
+   "problem": 3,
+   "example_first": 3,
+   "plain_terms": 5,
+   "limits": 4,
+   "explains_examples": 5,
+   "thinking_quiz": 4,
+   "misconception_distractors": 4,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "The lesson is clear and its numbers are correct, and it explains the decimal-rate and rule-of-72 mistakes well. But it opens with definitions instead of a problem, shows the formula before working through it, never says where the rule of 72 stops being accurate (high rates), uses a recall-only cloze practice, leaves some distractors unexplained ($2,200, $2,440, n = 1), and overstates that 'one formula covers every case'."
+  }
+ },
+ {
+  "kind": "pair",
+  "arm": "new=Y",
+  "n": 3,
+  "rep": 0,
+  "out": {
+   "better": "Y",
+   "why": "Y defines interest and principal up front, flags the common mistakes (entering 5 instead of 0.05, dividing 72 by 0.06), states the limit that more frequent compounding adds only a little, and uses quiz distractors built from real mix-ups, while X has a broken table that just repeats its own prose and weaker, more obvious distractors."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "old",
+  "n": 4,
+  "rep": 0,
+  "out": {
+   "problem": 3,
+   "example_first": 3,
+   "plain_terms": 5,
+   "limits": 4,
+   "explains_examples": 5,
+   "thinking_quiz": 4,
+   "misconception_distractors": 3,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "The lesson is clear, all the numbers check out, and the quizzes ask learners to predict and apply; it loses points because it gives the definitions and the even-count rule before its examples, the opening states the question but not why it matters, and several quiz explanations (the 9 choice, the mean/median swaps, the company-pay choices) don't say why each wrong answer is wrong."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "new",
+  "n": 4,
+  "rep": 0,
+  "out": {
+   "problem": 4,
+   "example_first": 3,
+   "plain_terms": 5,
+   "limits": 4,
+   "explains_examples": 5,
+   "thinking_quiz": 5,
+   "misconception_distractors": 5,
+   "overall": 5,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "A clear, accurate lesson whose quizzes check thinking and whose wrong choices are real misconceptions; the mean and median are defined before the worked example rather than after it, and it never says when the mean is the better choice."
+  }
+ },
+ {
+  "kind": "pair",
+  "arm": "new=X",
+  "n": 4,
+  "rep": 0,
+  "out": {
+   "better": "Y",
+   "why": "Y says when each measure applies (with no outliers either one works, with extreme values use the median) and its quiz asks for transfer to a new case (the company salaries), while X's explicit sort-first warning and in-lesson checks do not make up for having no guidance on when the mean is fine."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "old",
+  "n": 5,
+  "rep": 0,
+  "out": {
+   "problem": 4,
+   "example_first": 3,
+   "plain_terms": 4,
+   "limits": 4,
+   "explains_examples": 4,
+   "thinking_quiz": 4,
+   "misconception_distractors": 4,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "An accurate, clear lesson that tackles the no-cache/no-store confusion and the max-age staleness trade-off head-on. It states the rules before giving its examples, leaves 'header' and 'bandwidth' unexplained, and only one quiz explains why each wrong choice is wrong."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "new",
+  "n": 5,
+  "rep": 0,
+  "out": {
+   "problem": 5,
+   "example_first": 4,
+   "plain_terms": 4,
+   "limits": 5,
+   "explains_examples": 5,
+   "thinking_quiz": 5,
+   "misconception_distractors": 4,
+   "overall": 5,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "A clear, accurate lesson that starts from the problem and covers the classic no-cache/no-store mistake well; a few basic terms (response, header, client) are never defined, and some quiz explanations skip a wrong choice, such as 'only the new ETag' in the ETag quiz."
+  }
+ },
+ {
+  "kind": "pair",
+  "arm": "new=Y",
+  "n": 5,
+  "rep": 0,
+  "out": {
+   "better": "Y",
+   "why": "Y gives concrete worked examples (an ETag value \"v7\", a logo, a news site, a bank page), shows the privacy limit of no-cache through a spot-the-mistake check, and its quizzes cover more ground, including the ETag-changed case and fixing a misused no-store, while X has fewer examples and quizzes that mostly repeat its definitions."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "old",
+  "n": 6,
+  "rep": 0,
+  "out": {
+   "problem": 5,
+   "example_first": 5,
+   "plain_terms": 4,
+   "limits": 5,
+   "explains_examples": 5,
+   "thinking_quiz": 5,
+   "misconception_distractors": 5,
+   "overall": 5,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "A clear lesson that starts from an example, with sound quizzes and real misconceptions as distractors; the only gap is that 'closure', 'global' and 'truthiness/falsy' are used without plain-word explanations."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "new",
+  "n": 6,
+  "rep": 0,
+  "out": {
+   "problem": 5,
+   "example_first": 5,
+   "plain_terms": 4,
+   "limits": 4,
+   "explains_examples": 5,
+   "thinking_quiz": 5,
+   "misconception_distractors": 5,
+   "overall": 5,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "A clear lesson that starts with an example and has strong quizzes that make the learner predict output. Minor issues: 'evaluates' and 'is None' are not explained in the text where they first appear, and the explanation for the leak quiz cites `n = n + 1` when option f actually runs `total = total + x`."
+  }
+ },
+ {
+  "kind": "pair",
+  "arm": "new=X",
+  "n": 6,
+  "rep": 0,
+  "out": {
+   "better": "Y",
+   "why": "Y explains the cause more precisely (the default lives on the function in __defaults__, and sharing alone is harmless because a bug needs both a mutable default and code that mutates it), warns that `if not items` is the wrong check, and its quizzes test harder ideas like the falsy-empty-list mistake and a list default that is never mutated, while X stays at the level of the basic trap."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "old",
+  "n": 7,
+  "rep": 0,
+  "out": {
+   "problem": 2,
+   "example_first": 2,
+   "plain_terms": 3,
+   "limits": 4,
+   "explains_examples": 4,
+   "thinking_quiz": 3,
+   "misconception_distractors": 3,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "The lesson opens with a definition rather than a problem, never says what thylakoids or the stroma belong to (the chloroplast) or what ATP and NADPH actually are, and has no distractor-specific feedback, though it handles the oxygen-from-water misconception well and includes two good reasoning practices."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "new",
+  "n": 7,
+  "rep": 0,
+  "out": {
+   "problem": 4,
+   "example_first": 3,
+   "plain_terms": 4,
+   "limits": 5,
+   "explains_examples": 5,
+   "thinking_quiz": 4,
+   "misconception_distractors": 4,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "A clear lesson built around a real misconception and two good prediction questions, but it states the general equation before any concrete example, ATP and NADPH get only a 'battery' metaphor, the fill-in, cloze and 'which set' practices test recall, and it simplifies CO2's oxygen to going 'into sugar' (some actually ends up in water), which is common in textbooks but not strictly exact."
+  }
+ },
+ {
+  "kind": "pair",
+  "arm": "new=Y",
+  "n": 7,
+  "rep": 0,
+  "out": {
+   "better": "Y",
+   "why": "Y introduces the chloroplast setting, explains why people wrongly guess CO2 (it has oxygen atoms), states the limit that the Calvin cycle uses no light directly but still stops in darkness, and adds an isotope-tracing prediction with a transfer quiz, so it builds deeper understanding than X's mostly recall-level coverage."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "old",
+  "n": 8,
+  "rep": 0,
+  "out": {
+   "problem": 5,
+   "example_first": 5,
+   "plain_terms": 4,
+   "limits": 4,
+   "explains_examples": 5,
+   "thinking_quiz": 5,
+   "misconception_distractors": 4,
+   "overall": 5,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "A strong, accurate natural-frequency walkthrough where every number checks out (89.1\u224889, 9/98\u22489.2%, 18/116\u224815.5%). Two small gaps: 'base rate' is used in the text before it is explained there (only the keyword list defines it), and a few wrong choices go unexplained, such as 'sick people more likely to test negative' and '2%'. The Sam item also assumes 'he' for an unnamed-gender character."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "new",
+  "n": 8,
+  "rep": 0,
+  "out": {
+   "problem": 5,
+   "example_first": 5,
+   "plain_terms": 5,
+   "limits": 4,
+   "explains_examples": 5,
+   "thinking_quiz": 5,
+   "misconception_distractors": 4,
+   "overall": 5,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "The arithmetic is right throughout (89.1\u224889, 9/98\u22489%, Town B 450/495\u224891%, 18/116\u224816%), and the lesson moves well from a concrete case to the rule; its weak spots are that the limits come mostly from the Town B quiz and not the pages, and that the 'About 10%' and 'About 2%' distractors in the last quiz are never explained."
+  }
+ },
+ {
+  "kind": "pair",
+  "arm": "new=Y",
+  "n": 8,
+  "rep": 0,
+  "out": {
+   "better": "Y",
+   "why": "Y defines key terms like false positive, base rate and conditional probability right where they come up, works through a common mistake with explained wrong answers, and adds a Town A vs Town B quiz showing that a positive result becomes reliable when the condition is common, so it teaches the limits of the idea more fully than X."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "old",
+  "n": 9,
+  "rep": 0,
+  "out": {
+   "problem": 3,
+   "example_first": 3,
+   "plain_terms": 4,
+   "limits": 3,
+   "explains_examples": 4,
+   "thinking_quiz": 4,
+   "misconception_distractors": 5,
+   "overall": 3,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 2,
+   "notes": "The lesson is clear and the quizzes are strong, but it states that all verbs of movement take \u00eatre, which is wrong because marcher, courir and voler take avoir. It also says that with \u00eatre the participle always agrees with the subject, which does not hold for reflexive verbs such as elle s'est lav\u00e9 les mains, and it never shows where either rule stops working."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "new",
+  "n": 9,
+  "rep": 0,
+  "out": {
+   "problem": 4,
+   "example_first": 4,
+   "plain_terms": 5,
+   "limits": 3,
+   "explains_examples": 5,
+   "thinking_quiz": 3,
+   "misconception_distractors": 3,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 1,
+   "notes": "The lesson is clear and well built, but it says every movement verb takes \u00eatre, and the flowchart repeats this, even though marcher and courir take avoir; the quiz explanations also skip most wrong choices, and some distractors, like 'Je suis lev\u00e9 me' and 'Neither verb', are not mistakes a learner would really make."
+  }
+ },
+ {
+  "kind": "pair",
+  "arm": "new=X",
+  "n": 9,
+  "rep": 0,
+  "out": {
+   "better": "X",
+   "why": "X explains more clearly: it gives the literal meaning of reflexive verbs and a rule for spotting movement verbs, says that agreement is silent in speech, and works through a check-yourself example before the quiz, while Y's first quiz item gives away its answer by printing both options inside the question."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "old",
+  "n": 10,
+  "rep": 0,
+  "out": {
+   "problem": 3,
+   "example_first": 2,
+   "plain_terms": 4,
+   "limits": 3,
+   "explains_examples": 4,
+   "thinking_quiz": 4,
+   "misconception_distractors": 4,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "The steps and numeric quizzes are clear and accurate, but the lesson gives the general rule before the x=100/y=300 worked example, says little about why the handshake exists (reliability, ordering), leaves 'protocol' and 'packet' unexplained, uses a cloze that only tests recall, and says TCP 'always' completes the handshake before data without mentioning TCP Fast Open."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "new",
+  "n": 10,
+  "rep": 0,
+  "out": {
+   "problem": 5,
+   "example_first": 4,
+   "plain_terms": 4,
+   "limits": 4,
+   "explains_examples": 3,
+   "thinking_quiz": 4,
+   "misconception_distractors": 4,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "Clear, example-driven lesson. It covers common mistakes well and has sound quiz keys, but the Step 1 table repeats the page text word for word with no explanation, the flowchart checks only x + 1 and never y + 1, the cloze practice only tests recall, 'initial sequence number' first appears without a plain definition, and it doesn't mention that a capture starting mid-connection could also show data with no SYN."
+  }
+ },
+ {
+  "kind": "pair",
+  "arm": "new=X",
+  "n": 10,
+  "rep": 0,
+  "out": {
+   "better": "X",
+   "why": "X motivates the handshake up front, pins each step to a concrete number from the start, names and corrects the common mistake of acknowledging x instead of x + 1, and adds a worked practice item; Y is clear, but it holds its numbers back until a separate example section and does less to catch misconceptions."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "old",
+  "n": 1,
+  "rep": 1,
+  "out": {
+   "problem": 3,
+   "example_first": 5,
+   "plain_terms": 3,
+   "limits": 5,
+   "explains_examples": 4,
+   "thinking_quiz": 4,
+   "misconception_distractors": 3,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "The lesson starts with concrete data and clearly shows the WHERE-vs-ON and COUNT(*) pitfalls. Weak spots: it never states the problem up front, it leaves 'predicate' and 'executor' unexplained, the fill-in and cloze practices test recall, and most explanations skip several wrong choices, such as COUNT(c.id) and WHERE o.id IS NOT NULL."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "new",
+  "n": 1,
+  "rep": 1,
+  "out": {
+   "problem": 5,
+   "example_first": 4,
+   "plain_terms": 4,
+   "limits": 5,
+   "explains_examples": 5,
+   "thinking_quiz": 5,
+   "misconception_distractors": 4,
+   "overall": 5,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "A strong lesson built on one dataset with a clear trap. ON, GROUP BY and aggregate are used before they are defined, and some quiz explanations cover only one or two of the wrong choices."
+  }
+ },
+ {
+  "kind": "pair",
+  "arm": "new=X",
+  "n": 1,
+  "rep": 1,
+  "out": {
+   "better": "X",
+   "why": "X's sample data includes Ben, who has orders but none over 10, so the lesson body itself shows the ON-versus-WHERE difference, and its synthesis exercise and final quiz combine all three mistakes; Y shows that case only in a quiz, though it explains NULL padding more clearly."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "old",
+  "n": 2,
+  "rep": 1,
+  "out": {
+   "problem": 5,
+   "example_first": 4,
+   "plain_terms": 4,
+   "limits": 5,
+   "explains_examples": 4,
+   "thinking_quiz": 4,
+   "misconception_distractors": 4,
+   "overall": 5,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 1,
+   "notes": "A clear lesson that opens with the problem and has good scenario quizzes, but it never explains that a hash comes from a commit's content plus its parent (which is why rebase changes hashes), recall-style fill-ins sit next to the thinking quizzes, and the claim that merge always creates a merge commit is wrong when the branch can fast-forward."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "new",
+  "n": 2,
+  "rep": 1,
+  "out": {
+   "problem": 5,
+   "example_first": 5,
+   "plain_terms": 5,
+   "limits": 5,
+   "explains_examples": 5,
+   "thinking_quiz": 4,
+   "misconception_distractors": 4,
+   "overall": 5,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "The lesson starts from a concrete case of a branch falling behind, defines each term the first time it appears, and covers the golden rule and the common mistake; the fill-in-the-blank practice only checks recall, and the feedback explains the right answer but rarely says why each wrong choice is wrong."
+  }
+ },
+ {
+  "kind": "pair",
+  "arm": "new=X",
+  "n": 2,
+  "rep": 1,
+  "out": {
+   "better": "X",
+   "why": "X uses concrete named commits (A, B, M, A', B') throughout, defines commit and hash up front, explains why the shared-branch problem happens (duplicate commits and conflicts) instead of leaving it as an open question, and includes a quiz item showing that both commands end with the same files, so a newcomer gets more precise understanding and limits."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "old",
+  "n": 3,
+  "rep": 1,
+  "out": {
+   "problem": 2,
+   "example_first": 3,
+   "plain_terms": 4,
+   "limits": 2,
+   "explains_examples": 3,
+   "thinking_quiz": 4,
+   "misconception_distractors": 3,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 1,
+   "notes": "The numbers and answer keys are correct, but the lesson opens with definitions rather than a reason to care, and it shows the formula before the worked example. The exponent of 24 (n\u00d7t) is never explained. One table just repeats the page text instead of adding anything. The lesson never says where the rule of 72 stops being accurate, such as at high rates. Most wrong choices go unexplained. 'Monthly beats yearly' is given as advice for loan offers too, where monthly compounding actually costs the borrower more."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "new",
+  "n": 3,
+  "rep": 1,
+  "out": {
+   "problem": 3,
+   "example_first": 4,
+   "plain_terms": 5,
+   "limits": 3,
+   "explains_examples": 5,
+   "thinking_quiz": 4,
+   "misconception_distractors": 3,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 1,
+   "notes": "The lesson is clear, the numbers are correct (monthly $1,104.94 checks out) and it flags good common mistakes. It opens by defining terms instead of stating a problem. It says 'one formula covers every compound interest case', which is untrue for continuous compounding and for regular deposits. It never says the rule of 72 gets less accurate at high rates. The P/r/n/t cloze tests recall of wording. Several distractors are never explained: $2,200, $2,440, n = 1, 'about 12.5 years' and 'slightly lower, about $1,100'."
+  }
+ },
+ {
+  "kind": "pair",
+  "arm": "new=Y",
+  "n": 3,
+  "rep": 1,
+  "out": {
+   "better": "Y",
+   "why": "Y teaches the limits X leaves out, such as the common 5-vs-0.05 and 72/0.06 mistakes, the small real gain from monthly compounding, and the rule of 72 being an estimate, and its quiz distractors test those mix-ups, while X has a broken duplicate table and weaker distractors."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "old",
+  "n": 4,
+  "rep": 1,
+  "out": {
+   "problem": 4,
+   "example_first": 3,
+   "plain_terms": 5,
+   "limits": 3,
+   "explains_examples": 5,
+   "thinking_quiz": 4,
+   "misconception_distractors": 4,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "The lesson is clear and all its numbers are correct, but it defines mean and median before showing an example, never says when the median falls short (for example skewed data where totals matter), and the pay question does not explain why each wrong choice is wrong."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "new",
+  "n": 4,
+  "rep": 1,
+  "out": {
+   "problem": 4,
+   "example_first": 4,
+   "plain_terms": 5,
+   "limits": 4,
+   "explains_examples": 5,
+   "thinking_quiz": 5,
+   "misconception_distractors": 4,
+   "overall": 5,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "A clear, accurate lesson with correct arithmetic and keys; it loses points because it defines mean and median before the worked example, it never says when the mean is the better choice, Question 2 shows its answer right away, and some wrong answers (such as 'Mean 2, median 20') are unlikely beliefs with no explanation."
+  }
+ },
+ {
+  "kind": "pair",
+  "arm": "new=Y",
+  "n": 4,
+  "rep": 1,
+  "out": {
+   "better": "Y",
+   "why": "Y covers the same explanations and examples as X but also names the common mistake of not sorting first, adds an in-lesson self-check, and has more quizzes that test the sorting mistake and the idea that a median need not be a value in the list."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "old",
+  "n": 5,
+  "rep": 1,
+  "out": {
+   "problem": 4,
+   "example_first": 4,
+   "plain_terms": 4,
+   "limits": 5,
+   "explains_examples": 5,
+   "thinking_quiz": 5,
+   "misconception_distractors": 4,
+   "overall": 5,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "The lesson is clear and accurate, and it tackles the no-cache misconception head-on, but it never defines 'header', 'bandwidth' or 'fresh', and most quiz feedback explains only the correct choice, not why each wrong choice fails."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "new",
+  "n": 5,
+  "rep": 1,
+  "out": {
+   "problem": 5,
+   "example_first": 5,
+   "plain_terms": 4,
+   "limits": 5,
+   "explains_examples": 5,
+   "thinking_quiz": 5,
+   "misconception_distractors": 4,
+   "overall": 5,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "A clear, example-led lesson that directly targets the no-cache vs no-store confusion; two gaps: 'header' and 'response' are never defined for a true newcomer, and some quiz explanations skip distractors such as 'no-store plus ETag' and '304 plus a new ETag'."
+  }
+ },
+ {
+  "kind": "pair",
+  "arm": "new=X",
+  "n": 5,
+  "rep": 1,
+  "out": {
+   "better": "X",
+   "why": "X makes the limits clearer with concrete cases (a changed logo, a shared computer) and has a worked spot-the-mistake check, and its quizzes ask the learner to apply more of the ideas, including the ETag changed-content case and fixing a misused no-store."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "old",
+  "n": 6,
+  "rep": 1,
+  "out": {
+   "problem": 5,
+   "example_first": 5,
+   "plain_terms": 4,
+   "limits": 5,
+   "explains_examples": 5,
+   "thinking_quiz": 5,
+   "misconception_distractors": 4,
+   "overall": 5,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "A strong, accurate lesson that starts with a concrete surprise and covers the fix and its limits; it leaves 'closure', 'global' and 'truthiness/falsy' unexplained, and some quiz explanations skip the less likely distractors, such as [2, 1] and [1]."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "new",
+  "n": 6,
+  "rep": 1,
+  "out": {
+   "problem": 5,
+   "example_first": 5,
+   "plain_terms": 4,
+   "limits": 4,
+   "explains_examples": 5,
+   "thinking_quiz": 5,
+   "misconception_distractors": 4,
+   "overall": 5,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "The lesson is clear and correct. It opens with an example and has prediction-based quizzes with one right answer each. It has small gaps: it uses `is` and 'evaluates' without explaining them in the text, some wrong choices like `[7, 9]`, `[10, 1, 2]` and the `factor=2` option get no explanation, and the review quiz's feedback mentions `n = n + 1` although option f uses `total = total + x`."
+  }
+ },
+ {
+  "kind": "pair",
+  "arm": "new=Y",
+  "n": 6,
+  "rep": 1,
+  "out": {
+   "better": "X",
+   "why": "Both explain the once-at-def cause and the None fix clearly, but X also covers a key limit of the fix (`if not items` throws away an empty list the caller passed in) and has harder quizzes that test the rule that a default must be both mutable and changed, while Y's quizzes mostly repeat the basic case."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "old",
+  "n": 7,
+  "rep": 1,
+  "out": {
+   "problem": 2,
+   "example_first": 2,
+   "plain_terms": 3,
+   "limits": 4,
+   "explains_examples": 4,
+   "thinking_quiz": 4,
+   "misconception_distractors": 3,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "The lesson is accurate and clearly traces the oxygen back to water. But it opens with a definition instead of a problem, never says thylakoids sit inside chloroplasts, includes two recall-only practices, and explains only the correct choices, leaving distractors such as 'oxygen comes from sugar' unexplained."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "new",
+  "n": 7,
+  "rep": 1,
+  "out": {
+   "problem": 4,
+   "example_first": 3,
+   "plain_terms": 4,
+   "limits": 5,
+   "explains_examples": 5,
+   "thinking_quiz": 4,
+   "misconception_distractors": 3,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "A clear lesson that sticks to one idea and directly tackles the 'oxygen comes from CO2' myth. The general rule and the equation come before any concrete case, and 'membrane' is never explained. Most multiple-choice explanations only explain the right answer, not why each wrong choice is wrong. It simplifies CO2's oxygen as going entirely into sugar, when some actually ends up in water."
+  }
+ },
+ {
+  "kind": "pair",
+  "arm": "new=Y",
+  "n": 7,
+  "rep": 1,
+  "out": {
+   "better": "Y",
+   "why": "Y makes the ideas easier to grasp: it introduces the chloroplast and says the spent carriers get recharged, so it's clear why darkness stops the Calvin cycle; its tagged-atom prediction shows how we know the oxygen comes from water, and its quizzes go further by testing whether a newcomer can apply the idea to a new tracer experiment."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "old",
+  "n": 8,
+  "rep": 1,
+  "out": {
+   "problem": 5,
+   "example_first": 5,
+   "plain_terms": 4,
+   "limits": 4,
+   "explains_examples": 5,
+   "thinking_quiz": 4,
+   "misconception_distractors": 4,
+   "overall": 5,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "A clear lesson that counts 1,000 people and gets every number right; small gaps: 'base rate' and 'Bayes' theorem' are used before they are explained, the theorem is never written out in general form, the first practice and the fill-in-the-numbers practice are mostly recall or arithmetic, the '2%' wrong choice is not explained, and the Sam practice calls Sam 'he' without being told."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "new",
+  "n": 8,
+  "rep": 1,
+  "out": {
+   "problem": 5,
+   "example_first": 5,
+   "plain_terms": 5,
+   "limits": 4,
+   "explains_examples": 5,
+   "thinking_quiz": 4,
+   "misconception_distractors": 4,
+   "overall": 5,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "A clear count-based lesson whose numbers all check out (89, 98, 9/98\u22489%, Town B\u224891%, 18/116\u224816%); it loses points because the cloze practice only tests recall, the last quiz explains only the 90% distractor and not the 10% and 2% ones, and the title calls a test with 90% sensitivity and 91% specificity 'right 90% of the time'."
+  }
+ },
+ {
+  "kind": "pair",
+  "arm": "new=Y",
+  "n": 8,
+  "rep": 1,
+  "out": {
+   "better": "Y",
+   "why": "Y defines key terms (false positive, base rate, conditional probability) as they first come up, states the limit outright (the trap is worst when a condition is rare), and adds a quiz comparing a 1% town with a 50% town that tests that limit, while X leaves the base-rate effect as an open question and its quizzes mostly repeat the same calculation."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "old",
+  "n": 9,
+  "rep": 1,
+  "out": {
+   "problem": 3,
+   "example_first": 3,
+   "plain_terms": 4,
+   "limits": 3,
+   "explains_examples": 4,
+   "thinking_quiz": 4,
+   "misconception_distractors": 5,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 1,
+   "notes": "The lesson is clear and well quizzed, but it says 'verbs of movement' take \u00eatre without limits: many movement verbs, such as marcher, courir and nager, take avoir, and it never mentions the \u00eatre list (DR MRS VANDERTRAMP) or that sortir and monter switch to avoir when they take an object."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "new",
+  "n": 9,
+  "rep": 1,
+  "out": {
+   "problem": 4,
+   "example_first": 4,
+   "plain_terms": 5,
+   "limits": 3,
+   "explains_examples": 4,
+   "thinking_quiz": 3,
+   "misconception_distractors": 3,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 1,
+   "notes": "The lesson is clear and well built, and it handles the j'ai all\u00e9 and elle a mang\u00e9e traps well, but it wrongly says all movement verbs take \u00eatre (marcher, courir and nager take avoir), it never mentions the reflexive agreement exception (elle s'est lav\u00e9 les mains), and its quiz explanations cover only the correct answer, with some weak distractors such as 'Neither verb' and 'Je suis lev\u00e9 me'."
+  }
+ },
+ {
+  "kind": "pair",
+  "arm": "new=X",
+  "n": 9,
+  "rep": 1,
+  "out": {
+   "better": "X",
+   "why": "X explains each idea more clearly for a newcomer (it gives a 'changes place' cue for spotting movement verbs, translates se lever literally, and walks through a Marie example explaining why each wrong option fails), while Y's quizzes are somewhat more searching but one gives its answer away in the question ('nous sommes partis / nous avons partis')."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "old",
+  "n": 10,
+  "rep": 1,
+  "out": {
+   "problem": 3,
+   "example_first": 2,
+   "plain_terms": 4,
+   "limits": 3,
+   "explains_examples": 4,
+   "thinking_quiz": 4,
+   "misconception_distractors": 5,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 1,
+   "notes": "The lesson is clear and its quizzes test applying the numbers, but it gives the rule before the worked example, never says why agreeing on starting numbers matters, leaves 'protocol' unexplained, and overstates that TCP 'always' sends no data before the final ACK, which TCP Fast Open and data carried on the final ACK contradict."
+  }
+ },
+ {
+  "kind": "abs",
+  "arm": "new",
+  "n": 10,
+  "rep": 1,
+  "out": {
+   "problem": 5,
+   "example_first": 4,
+   "plain_terms": 4,
+   "limits": 4,
+   "explains_examples": 4,
+   "thinking_quiz": 4,
+   "misconception_distractors": 4,
+   "overall": 4,
+   "cites_source": 0,
+   "bad_quizzes": 0,
+   "false_claims": 0,
+   "notes": "The lesson is clear and well worked. Its weak spots: the Step 1 table just repeats the prose, it never says why the acknowledgment is +1 (the SYN uses up one sequence number), the cloze practice is recall, two SYN-ACK distractors have no explanation, and the flowchart checks only the SYN-ACK acknowledgment, not the final ACK."
+  }
+ },
+ {
+  "kind": "pair",
+  "arm": "new=X",
+  "n": 10,
+  "rep": 1,
+  "out": {
+   "better": "X",
+   "why": "X explains early why the handshake exists (both sides must learn each other's starting numbers), uses concrete numbers at every step, names the common 'acknowledgment = x' mistake and has the learner practise spotting it, while Y waits until a separate section to show the numbers and points out fewer mistakes, though its quizzes are equally solid."
+  }
+ }
+]
