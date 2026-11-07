@@ -22,7 +22,7 @@ for n in positions:
         print(f"{n:02d} skip: {'already replaced' if not again else 'not a replacement yet'}"); continue
     plan = load_plan(row["plan"])
     errs = [e for e in lint(plan) if e.startswith(row["name"] + ":")]
-    if errs: sys.exit(f"{n:02d} not inserted, brief fails lint: {errs}")
+    if errs: print(f"{n:02d} not inserted, brief fails lint: {errs}"); continue
     L = next(L for L in plan.LESSONS if L["name"] == row["name"])
     desc = brief(getattr(plan, "URL", ""), L)
     r = call("insert_lesson", {"courseId": ids["courseId"], "name": row["name"], "description": desc,

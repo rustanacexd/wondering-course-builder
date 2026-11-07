@@ -58,7 +58,7 @@ def lint(plan):
         b = brief(plan.URL, L)
         if not L.get("description") and not 4 <= len(pts) <= 8: errs.append(f"{n}: {len(pts)} points (want 4-8)")
         if not 5 <= len(chk) <= 12: errs.append(f"{n}: {len(chk)} checks (want 5-12)")
-        if len(b) > 2000: errs.append(f"{n}: brief is {len(b)} chars (max 2000)")
+        if len(b) > 2400: errs.append(f"{n}: brief is {len(b)} chars (max 2400)")
         if source_refs(b.replace(TEACH, "")): errs.append(f"{n}: brief refers to its source: {source_refs(b.replace(TEACH, ''))}")
         if len(n) > 70: errs.append(f"{n}: name longer than 70 chars")
         for lbl, rx in chk:

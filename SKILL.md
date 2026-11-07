@@ -12,6 +12,9 @@ Read [GUIDELINES.md](GUIDELINES.md) before writing any brief. Give [REVIEW_GUIDE
 
 ## Rules
 
+- Run the whole job end to end without asking. Decide plan, cuts, fixes and retries yourself and report them at the end.
+- The one stop is deleting old copies: the Wondering server requires the owner to approve each delete preview. Ask once per run, at the very end, in one line ("Say go to delete N old copies"). Never ask whether to keep them.
+- Replacements appear next to their old copies until that delete. Say so when the run starts.
 - The brief is the only lever. Every brief asks for teaching (problem, example, contrast) and never names its source.
 - Verify every claim in a brief before inserting it.
 - Generate lessons yourself in the browser. The owner never clicks.
@@ -29,7 +32,7 @@ python3 -I ${CLAUDE_SKILL_DIR}/scripts/course_build.py selftest <spec>
 python3 -I ${CLAUDE_SKILL_DIR}/scripts/course_build.py preview <spec>
 ```
 
-Selftest must pass. Show the owner `courses/<spec>_outline.md` and cut what they don't want.
+Selftest must pass. Cut off-topic or duplicate lessons yourself and go on. Share `courses/<spec>_outline.md` only if the owner asked to review it.
 
 ## 2. Create
 
@@ -76,7 +79,7 @@ python3 -I ${CLAUDE_SKILL_DIR}/scripts/delete_stale.py <spec> preview
 python3 -I ${CLAUDE_SKILL_DIR}/scripts/delete_stale.py <spec> confirm
 ```
 
-Show the preview lines with the results and confirm on the owner's go. Tokens expire in 15 minutes. If they have expired, preview and confirm together, but only when the lesson IDs match the approved set. Confirm ends with `all live present: True`.
+Run this once, after every lesson in the run has passed. Put the preview count in the final report with the one-line ask, and confirm on the owner's go. Tokens expire in 15 minutes. If they have expired, preview and confirm together, but only when the lesson IDs match the approved set. Confirm ends with `all live present: True`.
 
 ## Gotchas
 
